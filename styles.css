@@ -1,0 +1,793 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+  }
+  
+ /* NAVBAR */
+  
+  .mainNavbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    padding: 20px 40px;
+  }
+  
+  .navbarWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .navbarLogo p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    color: #6959a6;
+  }
+  
+  .navbarMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbarMenu a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbarMenu a:hover {
+    color: #6959a6;
+  }
+  
+  .navbarCloseIcon {
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  /* HEADER + NAVBAR */
+  
+  header {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+  }
+
+  .top {
+    text-align: center;
+    justify-content: left;
+    padding: 100px 20px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255)
+      ),
+      url(images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .top h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    opacity: 0.7;
+  }
+
+  
+  .top h1:first-child {
+    opacity: 0.5;
+  }
+  
+  .top h2 {
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #14171a;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  
+  .top a {
+    background-color: #6959a6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  
+/* SECTION ABOUT */
+  
+.profilBlock {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profilWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+  }
+  
+  .profilPhoto img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .profilText {
+    max-width: 700px;
+  }
+  
+  .profilIntro {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .profilTitle {
+    font-size: 36px;
+    color: #6959a6;
+    margin: 0 0 20px;
+    font-weight: 800;
+  }
+  
+  .profilDesc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #14171a;
+    margin-bottom: 30px;
+  }
+  
+  .profilBtn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #6959a6;
+    color: #6959a6;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .profilBtn:hover {
+    background-color: #6959a6;
+    color: white;
+  }
+  
+  
+  
+/*  SECTION SERVICE */
+  
+  .serviceSection {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .serviceHeader {
+    margin-bottom: 50px;
+  }
+  
+  .serviceSubtitle {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+  }
+  
+  .serviceTitle {
+    font-size: 36px;
+    color: #6959a6;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  
+  .serviceList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* CARD */
+  .serviceCard {
+    position: relative;
+    width: 200px;
+    height: 240px;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .serviceCard img {
+    width: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .serviceCard:hover img {
+    transform: scale(1.1) translateY(-5px);
+  }
+  
+  .serviceCard h3 {
+    font-size: 18px;
+    color: #6959a6;
+    margin: 0;
+    z-index: 1;
+  }
+  
+  /* TEXTE OVERLAY  (A ETUDIER)*/
+  .serviceOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .serviceCard:hover .serviceOverlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .serviceOverlay p {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+  }
+  
+  
+  
+/* PORTFOLIO */
+  
+  .portfolioBlock {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .portfolioHeader {
+    margin-bottom: 50px;
+  }
+  
+  .portfolioSubtitle {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+  }
+  
+  .portfolioTitle {
+    font-size: 36px;
+    color: #6959a6;
+    font-weight: 800;
+    margin: 10px 0 0;
+  }
+  
+  .portfolioGallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .portfolioGallery img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  
+/* PRICING */
+  
+  .pricingSection {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .pricingHeader {
+    margin-bottom: 50px;
+  }
+  
+  .pricingSubtitle {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+  }
+  
+  .pricingTitle {
+    font-size: 36px;
+    color: #6959a6;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  
+  .pricingCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .pricingCard {
+    width: 280px;
+    padding: 40px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricingCard img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .pricingCard h3 {
+    color: #6959a6;
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .pricingCard p {
+    margin: 8px 0;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .pricingCard p:nth-of-type(2),
+  .pricingCard p:nth-of-type(3) {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .pricingPrice {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .pricingBtn {
+    background-color: #6959a6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  
+/* PURPLE TRANSITION */
+  
+  .purpleTransition {
+    background-color: #6959a6;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .purpleTransition .purpleContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .purpleTransition .purpleText {
+    color: white;
+  }
+  
+  .purpleTransition .purpleText h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  
+  .purpleTransition .purpleText p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .purpleTransition .purpleButton a {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .purpleTransition .purpleButton a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+/* TESTIMONIALS */
+  
+  .testimonialSection {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .testimonialHeader {
+    margin-bottom: 50px;
+  }
+  
+  .testimonialSubtitle {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+  }
+  
+  .testimonialTitle {
+    font-size: 36px;
+    color: #6959a6;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  
+  .testimonialList {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonialCard {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .testimonialCard img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .testimonialText {
+    text-align: left;
+  }
+  
+  .testimonialText p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonialText h4 {
+    font-size: 16px;
+    color: #6959a6;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  
+/* BLOG */
+  
+  .blogSection {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .blogHeader {
+    margin-bottom: 50px;
+  }
+  
+  .blogSubtitle {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+  }
+  
+  .blogTitle {
+    font-size: 36px;
+    color: #6959a6;
+    font-weight: 800;
+    margin: 10px 0 0;
+  }
+  
+  .blogList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .blogPost {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    gap: 20px;
+  }
+  
+  .blogPost img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .blogContent {
+    text-align: left;
+  }
+  
+  .blogContent h3 {
+    margin-top: 0;
+    color: #6959a6;
+    font-size: 18px;
+  }
+  
+  .blogMeta {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .blogContent p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  .blogContent a {
+    color: #6959a6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  
+/* CONTACT */
+  
+  .contactSection {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .contactHeader {
+    margin-bottom: 40px;
+  }
+  
+  .contactSubtitle {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+  }
+  
+  .contactTitle {
+    font-size: 36px;
+    color: #6959a6;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contactForm textarea {
+    width: 80%;
+    height: 150px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-family: inherit;
+  }
+  
+  .contactForm button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #6959a6;
+    color: #6959a6;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contactForm button:hover {
+    background-color: #6959a6;
+    color: white;
+  }
+  
+/* FOOTER */
+  
+  .footerSection {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    background-color: white;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footerCopyright {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .footerIcons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footerIcons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #666;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .footerIcons a:hover {
+    background-color: #6959a6;
+    color: white;
+    border-color: #6959a6;
+  }
+  
+
+/* REPONSIVE MOBILE */
+
+
+  @media (max-width: 600px) {
+
+    .navbarWrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .navbarMenu {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .top h1 {
+      font-size: 28px;
+    }
+  
+    .top h2 {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  
+    .top a {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .profilWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profilPhoto img {
+      width: 200px;
+    }
+  
+    .profilText {
+      max-width: 100%;
+    }
+  
+    .serviceList,
+    .portfolioGallery,
+    .pricingCards,
+    .testimonialList {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .serviceCard,
+    .pricingCard,
+    .portfolioGallery img,
+    .testimonialCard,
+    .blogPost {
+      width: 90%;
+      max-width: 320px;
+    }
+  
+    .blogPost {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .blogPost img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  
+    .blogContent {
+      text-align: left;
+    }
+  
+    .purpleTransition .purpleContent {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .contactForm textarea {
+      width: 100%;
+    }
+  
+    .footerContent {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+  
